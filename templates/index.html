@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VeriNews AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>🔍 VeriNews AI</h1>
+
+            <p class="subtitle">
+                AI-powered News Credibility Analyzer using NLP & Machine Learning
+            </p>
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <h2>99.73%</h2>
+                    <p>Accuracy</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2>44,689</h2>
+                    <p>Articles</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2>Linear SVM</h2>
+                    <p>Best Model</p>
+                </div>
+
+            </div>
+
+            <div class="info-box">
+
+                <strong>📌 About TruthLens AI</strong>
+
+                <p>
+
+                    TruthLens AI is an NLP-based Machine Learning application
+                    that classifies complete news articles as
+                    <b>Real</b> or <b>Fake</b> based on linguistic
+                    patterns learned from a labeled dataset.
+
+                    <br><br>
+
+                    ⚠️ <b>Note:</b>
+
+                    This is a machine learning classifier,
+                    <b>not a real-time fact-checking system.</b>
+
+                    For the best results, paste a complete news article
+                    rather than a short statement.
+
+                </p>
+
+            </div>
+
+            <textarea id="news"
+                placeholder="Paste a complete news article here..."></textarea>
+
+            <div class="counter">
+
+                <span id="count">0</span> Characters
+
+            </div>
+
+            <div class="buttons">
+
+                <button id="exampleBtn">
+                    📰 Try Example
+                </button>
+
+                <button id="detectBtn">
+                    🚀 Analyze News
+                </button>
+
+                <button id="clearBtn">
+                    🗑 Clear
+                </button>
+
+            </div>
+
+            <div id="loading">
+
+                <div class="spinner"></div>
+
+                <p>Analyzing article...</p>
+
+            </div>
+
+            <div id="result"></div>
+
+            <div class="info-box">
+
+<strong>📢 Disclaimer</strong>
+
+<p>
+
+This application classifies articles using machine learning patterns learned from a labeled dataset.
+
+It does not verify factual accuracy and should not replace professional fact-checking.
+
+</p>
+
+</div>
+
+            <footer>
+
+                <h3>👨‍💻 Developed by</h3>
+
+                <strong>Mohd Mubeen</strong>
+
+                <p>B.Tech CSE (AI & ML)</p>
+
+                <p>Machine Learning • NLP • Flask</p>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
