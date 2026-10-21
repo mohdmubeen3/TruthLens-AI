@@ -8,11 +8,6 @@ TruthLens AI classifies complete news articles as **Real** or **Fake** based on 
 
 ---
 
-## 📸 Project Preview
-
-(Add screenshots here after pushing to GitHub)
-
----
 
 ## ✨ Features
 
